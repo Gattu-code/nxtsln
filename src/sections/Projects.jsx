@@ -113,25 +113,65 @@ export default function Projects({ content }) {
 
                 </div>
 
-                <div className="flex gap-4 mt-8">
+                {project.frontendDemos && (
+                <div className="mt-8">
+                    <p className="text-zinc-300 text-sm mb-3">
+                    Demos Frontend
+                    </p>
 
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    className="bg-white text-black px-5 py-2 rounded-xl text-sm font-medium hover:opacity-90 transition"
-                  >
-                    Live Demo
-                  </a>
-
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    className="border border-zinc-700 px-5 py-2 rounded-xl text-sm hover:bg-zinc-900 transition"
-                  >
-                    GitHub
-                  </a>
-
+                    <div className="flex flex-wrap gap-4">
+                    {project.frontendDemos.map((demo, demoIndex) => (
+                        <a
+                        key={demoIndex}
+                        href={demo.url}
+                        target="_blank"
+                        className="border border-zinc-700 px-5 py-2 rounded-xl text-sm hover:bg-zinc-900 transition"
+                        >
+                        {demo.label}
+                        </a>
+                    ))}
+                    </div>
                 </div>
+                )}
+
+                    {project.backendDemos && (
+                    <div className="mt-8">
+                        <p className="text-zinc-300 text-sm mb-3">
+                        Demos Backend
+                        </p>
+
+                        <div className="flex flex-wrap gap-4">
+                        {project.backendDemos.map((demo, demoIndex) => (
+                            <a
+                            key={demoIndex}
+                            href={demo.url}
+                            target="_blank"
+                            className="border border-zinc-700 px-5 py-2 rounded-xl text-sm hover:bg-zinc-900 transition"
+                            >
+                            {demo.label}
+                            </a>
+                        ))}
+                        </div>
+                    </div>
+                    )}
+
+                    <div className="flex gap-4 mt-8">
+                    <a
+                        href={project.demo}
+                        target="_blank"
+                        className="bg-white text-black px-5 py-2 rounded-xl text-sm font-medium hover:opacity-90 transition"
+                    >
+                        Live Demo
+                    </a>
+
+                    <a
+                        href={project.github}
+                        target="_blank"
+                        className="border border-zinc-700 px-5 py-2 rounded-xl text-sm hover:bg-zinc-900 transition"
+                    >
+                        GitHub
+                    </a>
+                    </div>
 
               </div>
 

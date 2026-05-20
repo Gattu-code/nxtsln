@@ -27,10 +27,31 @@ const es = {
         "Docker",
       ],
 
-       demo: "https://caragent.nxtsln.cloud",
+      frontendDemos: [
+  {
+    label: "Demo 1",
+    url: "https://volvo-demo.nxtsln.cloud",
+  },
+  {
+    label: "Demo 2",
+    url: "https://caminos-demo.nxtsln.cloud",
+  },
+],
 
-       github: "https://github.com/",
+backendDemos: [
+  {
+    label: "Backend Demo 1",
+    url: "https://volvo-demo.nxtsln.cloud/ui/leads",
+  },
+  {
+    label: "Backend Demo 2",
+    url: "https://caminos-demo.nxtsln.cloud/ui/leads",
+  },
+],
     },
+
+
+
     {
     title: "Sistema de Inteligencia Operacional para Flotas",
 
