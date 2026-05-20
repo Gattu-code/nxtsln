@@ -70,7 +70,7 @@ backendDemos: [
     
        demo: "https://fleet.nxtsln.cloud/",
 
-       github: "https://github.com/",
+       
     },
     {
       title: "Analizador Inteligente de Casos de Negocio",

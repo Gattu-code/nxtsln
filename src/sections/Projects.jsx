@@ -155,24 +155,7 @@ export default function Projects({ content }) {
                     </div>
                     )}
 
-                    <div className="flex gap-4 mt-8">
-                    <a
-                        href={project.demo}
-                        target="_blank"
-                        className="bg-white text-black px-5 py-2 rounded-xl text-sm font-medium hover:opacity-90 transition"
-                    >
-                        Live Demo
-                    </a>
-
-                    <a
-                        href={project.github}
-                        target="_blank"
-                        className="border border-zinc-700 px-5 py-2 rounded-xl text-sm hover:bg-zinc-900 transition"
-                    >
-                        GitHub
-                    </a>
-                    </div>
-
+                    
               </div>
 
             </motion.div>
