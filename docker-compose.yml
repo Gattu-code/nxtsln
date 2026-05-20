@@ -1,0 +1,12 @@
+services:
+
+  nxtsln-portfolio:
+
+    build: .
+
+    container_name: nxtsln-portfolio
+
+    restart: unless-stopped
+
+    ports:
+      - "3000:80"
