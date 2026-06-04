@@ -67,10 +67,13 @@ backendDemos: [
         "Lógica de Negocio",
     ],
 
-    
-       demo: "https://fleet.nxtsln.cloud/",
+    frontendDemos: [
+      {
+        label: "Demo",
+        url: "https://fleet.nxtsln.cloud",
+      },
+    ],
 
-       
     },
     {
       title: "Analizador Inteligente de Casos de Negocio",

@@ -69,7 +69,12 @@ const en = {
     "Business Logic",
   ],
 
-   demo: "https://fleet.nxtsln.cloud/",
+  frontendDemos: [
+    {
+      label: "Demo",
+      url: "https://fleet.nxtsln.cloud",
+    },
+  ],
 
 },
       {
